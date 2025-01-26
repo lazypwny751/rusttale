@@ -7,7 +7,7 @@ use tetra::ContextBuilder;
 use flib::defaults::{ DEFAULT_SIZE, VERSION, TITLE };
 use clap::Parser;
 use game::state::GameState;
-use locales::Transcript;
+use locales::part_one::TTableOne;
 
 // Temp import.
 // use tetra::window::{ set_title, set_fullscreen, get_current_monitor_size }; // This is about the doc.
@@ -36,7 +36,7 @@ fn main() -> tetra::Result {
 			println!("Debug mode..");
 
 			println!("options: {:?}", options);
-			println!("{}", Transcript::localize("hello world", &options.language));
+			println!("{}", TTableOne::localize("hello world", &options.language));
 			Ok(())
 		}
 	}
