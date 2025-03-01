@@ -1,7 +1,8 @@
 use localize::localization_table;
 
 // Transcript Table One.
-localization_table! {TTableOne = LDSL {
+localization_table! {
+	TTableOne = LDSL {
 	"hello world" = {
 		en => "Hello World!",
 		tr => "Merhaba Dünya!",
