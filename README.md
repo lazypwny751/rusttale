@@ -37,7 +37,6 @@ Usage: rusttale [OPTIONS]
 Options:
   -l, --language <LANGUAGE>  [default: en]
       --mode <MODE>          [default: game]
-      --locales <LOCALES>    [default: locales]
   -h, --help                 Print help
   -V, --version              Print version
 ```

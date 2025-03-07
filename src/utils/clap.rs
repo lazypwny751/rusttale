@@ -9,7 +9,4 @@ pub struct Opt {
 
 	#[arg(long, default_value = "game")]
 	pub mode: String,
-
-	#[arg(long, default_value = "locales")]
-	pub locales: String,
 }

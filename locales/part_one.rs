@@ -14,4 +14,3 @@ localization_table! {
 		fr => "Au revoir.",
 	},
 }}
-
