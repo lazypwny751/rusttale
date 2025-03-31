@@ -4,10 +4,10 @@ Welcome to rusttale localization, before start you'll see the "locales" director
 And all the trasncriptions are in the binary not like i18n or something else, we're using for it [localize](https://github.com/PokeJofeJr4th/rust-localize) for now.
  
 ## Naming.
-you can see there's predeclared files like "locales/part_one.rs" there, all the transcripts called under "locales/transcription.rs" it is the initial and caller. So if you want to add/call new transcription file go add something like:
+you can see there's predeclared files like "src/locales/part_one.rs" there, all the transcripts called under "src/locales/mod.rs" it is the initial and caller. So if you want to add/call new transcription file go add something like:
 
 ```rs
-// file: locales/transcription.rs
+// file: src/locales/transcription.rs
 pub mod part_one;
 pub mod my_part; // <- a new transcription example.
 ```

@@ -1,6 +1,6 @@
 use tetra::{graphics::{ self, Color, text::Text, text::Font }, State, Context };
-use flib::defaults::TEXT_OFFSET;
-use locales::part_one::TTableOne;
+use crate::game::defaults::TEXT_OFFSET;
+use crate::TTableOne;
 
 pub struct GameState {
 	text: Text,
