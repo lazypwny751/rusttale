@@ -1,0 +1,32 @@
+{
+  "name": "rusttale",
+  "ogmoVersion": "3.4.0",
+  "levelPaths": ["."],
+  "backgroundColor": "#282c34ff",
+  "gridColor": "#3c4049cc",
+  "anglesRadians": true,
+  "directoryDepth": 5,
+  "layerGridDefaultSize": {"x": 8, "y": 8},
+  "levelDefaultSize": {"x": 320, "y": 240},
+  "levelMinSize": {"x": 720, "y": 600},
+  "levelMaxSize": {"x": 720, "y": 600},
+  "levelValues": [],
+  "defaultExportMode": ".json",
+  "compactExport": false,
+  "externalScript": "",
+  "playCommand": "",
+  "entityTags": [],
+  "layers": [
+    {
+      "definition": "tile",
+      "name": "base layer",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "38663023",
+      "exportMode": 0,
+      "arrayMode": 1,
+      "defaultTileset": ""
+    }
+  ],
+  "entities": [],
+  "tilesets": []
+}
