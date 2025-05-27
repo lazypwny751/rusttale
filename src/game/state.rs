@@ -21,7 +21,7 @@ impl GameState {
 	pub fn new(ctx: &mut Context, language: &str) -> tetra::Result<GameState> {
 		#[allow(clippy::useless_format)]
 		let text = Text::new(format!("{}", TTableOne::localize("hello world", language)),
-			Font::vector(ctx, "assets/SourceCodePro-Regular.ttf", 16.0)?,
+			Font::vector(ctx, "resources/font/SourceCodePro-Regular.ttf", 16.0)?,
 		);
 
 		Ok(GameState { text })
