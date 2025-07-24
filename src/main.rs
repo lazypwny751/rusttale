@@ -20,10 +20,10 @@ fn main() -> tetra::Result {
 	let _options = Opt::parse();
 
 	let mut ctx = ContextBuilder::new(
-		format!("{} - {}", TITLE, VERSION), 
+		format!("{TITLE} - {VERSION}"), 
 		DEFAULT_SIZE.0, // x 
 		DEFAULT_SIZE.1	// y
 	).quit_on_escape(true).build()?;
 	
-	ctx.run(|ctx| GameState::new(ctx))
+	ctx.run(GameState::new)
 }
