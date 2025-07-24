@@ -708,23 +708,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8355be11b20d696c8f18f6cc018c4e372165b1fa8126cef092399c9951984ffa"
 
 [[package]]
-name = "localize"
-version = "0.1.0"
-source = "git+https://github.com/PokeJofeJr4th/rust-localize#5cc9b983e0612313304f92c340883e385dace1cb"
-dependencies = [
- "localize_macros",
-]
-
-[[package]]
-name = "localize_macros"
-version = "0.1.0"
-source = "git+https://github.com/PokeJofeJr4th/rust-localize#5cc9b983e0612313304f92c340883e385dace1cb"
-dependencies = [
- "quote",
- "syn",
-]
-
-[[package]]
 name = "log"
 version = "0.4.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1076,7 +1059,6 @@ name = "rusttale"
 version = "0.1.0"
 dependencies = [
  "clap",
- "localize",
  "ogmo3",
  "tetra",
 ]

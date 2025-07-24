@@ -1,14 +1,13 @@
 mod game;
-mod locales;
 
 use clap::Parser;
 use tetra::ContextBuilder;
-use crate::locales::part_one::TTableOne;
 use crate::game::{
 	defaults::{ DEFAULT_SIZE, VERSION, TITLE },
 	state::GameState
 };
 
+// Argument parsing.
 #[derive(Parser, Debug)]
 #[command(author = "lazypwny751", version = VERSION, propagate_version = true)]
 pub struct Opt {
@@ -16,8 +15,9 @@ pub struct Opt {
 	pub language: String,
 }
 
+// main block here.
 fn main() -> tetra::Result {
-	let options = Opt::parse();
+	let _options = Opt::parse();
 
 	let mut ctx = ContextBuilder::new(
 		format!("{} - {}", TITLE, VERSION), 
@@ -25,5 +25,5 @@ fn main() -> tetra::Result {
 		DEFAULT_SIZE.1	// y
 	).quit_on_escape(true).build()?;
 	
-	ctx.run(|ctx| GameState::new(ctx, &options.language))
+	ctx.run(|ctx| GameState::new(ctx))
 }

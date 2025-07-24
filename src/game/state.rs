@@ -1,46 +1,31 @@
-// imports.
-use tetra::audio::{self, Sound, SoundInstance};
 use tetra::{graphics::{ 
 	self, Color, text::Text, text::Font }, 
 	State, Context 
 };
-use crate::game::defaults::TEXT_OFFSET;
-use crate::TTableOne;
+use crate::game::defaults::{TEXT_OFFSET, DEFAULT_FONT, DEFAULT_FONT_SIZE};
 
-// Game State.
 pub struct GameState {
 	text: Text,
-	channel: SoundInstance
 }
 
-// And the gamestate.
 impl GameState {
-	pub fn new(ctx: &mut Context, language: &str) -> tetra::Result<Self> {
-		audio::set_master_volume(ctx, 0.4);
+	pub fn new(ctx: &mut Context) -> tetra::Result<Self> {
+		let sample_text = "Welcome to rusttale (Initramfs)!\n\n[ OK ]    Loading tinyllm.\n[ OK ]    Loading resources.\n[ OK ]    Loading dialogs.\n[ OK ]    Loading helpers.\n[ FAIL ] Init rusttale.\n>  Failed to init rusttale, executing fallback shell...\n\nrusttale rescue> ";
+		let text = Text::new(sample_text, Font::vector(ctx, DEFAULT_FONT, DEFAULT_FONT_SIZE)?);
 
-        let sound = Sound::new("resources/music/songfordenise.mp3")?;
-        let channel = sound.spawn(ctx)?;
-
-		#[allow(clippy::useless_format)]
-		let text = Text::new(format!("{}", TTableOne::localize("hello world", language)),
-			Font::vector(ctx, "resources/font/SourceCodePro-Regular.ttf", 16.0)?,
-		);
-
-		Ok(GameState { text, channel })
+		Ok(GameState { text })
 	}
 }
 
 // State implementation.
 impl State for GameState {
-	fn update(&mut self, ctx: &mut Context) -> tetra::Result {
-		self.channel.play();
-
+	fn update(&mut self, _ctx: &mut Context) -> tetra::Result {
 		Ok(())
 	}
 
     fn draw(&mut self, ctx: &mut Context) -> tetra::Result {
-        // Cornflower blue, as is tradition
-        graphics::clear(ctx, Color::rgb(0.392, 0.584, 0.929));
+        // Cornflower blue, as is tradition.
+        graphics::clear(ctx, Color::rgb(0.07, 0.07, 0.07));
 
         self.text.draw(ctx, TEXT_OFFSET);
 
