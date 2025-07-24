@@ -22,10 +22,18 @@ There's a limited localization support, that's not limiting the language entry o
 
 Build from sources
 ```sh
+# Let's clone the repository to local.
 git clone https://github.com/lazypwny751/rusttale.git && cd rusttale
+
+# First get the resources.
+cargo run -p resources
+
+# Build a release.
 cargo build --release
 ```
+
 or via prebuild installation script.
+
 ```sh
 curl -S <link> | bash -
 ```
