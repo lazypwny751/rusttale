@@ -1,0 +1,22 @@
+name: Clippy Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  clippy_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get Dependencies
+        run: |
+            sudo apt update
+            sudo apt install -y libasound2-dev
+      - name: Run Clippy
+        run: | 
+            cargo clippy --all-targets --all-features -- -Dwarnings
