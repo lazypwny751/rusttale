@@ -1,45 +1,62 @@
-# rusttale
+# Rusttale
 
 ![image](https://us1.discourse-cdn.com/flex019/uploads/rust_lang/original/2X/9/9f76ef5e791e27deaaafbca2a3bea35d63e165c8.gif)
 
 [![](https://dcbadge.limes.pink/api/server/QRjRkt65Ht)](https://discord.gg/QRjRkt65Ht)
 
-# Project.
+**Rusttale** is a 2D game developed using the [Tetra](https://github.com/tetra-engine/tetra) engine in Rust.
 
-## TODO:
-- CI/CD release builds.
-- prebuild install scripts.
-- menu.
+## Roadmap
 
-## localization support.
-There's a limited localization support, that's not limiting the language entry or context lenght but there is no variables or any custom values, so every entry must be constant, and on the another side, creating this transcription is too easy.
+- [ ] CI/CD release builds
+- [ ] Prebuild install scripts
+- [ ] In-game menu system
 
+## Localization Support
 
-## Sound&Music.
-- [supercollider](https://supercollider.github.io)
+There is currently limited localization support. It does not restrict language entries or context length, but there is no support for variables or custom values yet. Every entry must be constant. On the bright side, creating new transcriptions is very straightforward.
 
-# Installation.
+## Sound & Music
 
-Build from sources
-```sh
-# Let's clone the repository to local.
-git clone https://github.com/lazypwny751/rusttale.git && cd rusttale
+- Powered by [SuperCollider](https://supercollider.github.io)
 
-# First get the resources.
-cargo run -p resources
+## Installation
 
-# Build a release.
-cargo build --release
-```
+### Build from Source
 
-or via prebuild installation script.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/lazypwny751/rusttale.git && cd rusttale
+   ```
+
+2. **Fetch resources:**
+   ```sh
+   cargo run -p resources
+   ```
+
+3. **Build for release:**
+   ```sh
+   cargo build --release
+   ```
+
+4. **Run:**
+   ```sh
+   ./target/release/rusttale
+   ```
+
+### Prebuild Installation (Coming Soon)
 
 ```sh
 curl -S <link> | bash -
 ```
 
-# Usage.
-```
+## Documentation & Manpages
+
+This project includes manual pages. See [docs/man/README.md](docs/man/README.md) for installation instructions.
+
+## Usage
+
+```console
 Usage: rusttale [OPTIONS]
 
 Options:

@@ -1,10 +1,3 @@
-mod resources;
-
-use resources::RESOURCES;
-
 fn main() {
-	for i in RESOURCES {
-		println!("new asset:"); 
-		println!("> hash: {}\n> path: {}\n> url: {}", i.hash, i.path, i.url);
-	}
+	println!("Build resources/assets to binary file(s) dynamically for rusttale from resourcetale.\nbase:   https://github.com/lazypwny751/rusttale.git\nassets: https://github.com/lazypwny751/resourcetale.git");
 }

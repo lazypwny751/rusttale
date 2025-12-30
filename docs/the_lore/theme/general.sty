@@ -1,0 +1,43 @@
+\ProvidesPackage{general}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Better fonts (Palatino)
+\usepackage{mathpazo}
+\usepackage{microtype}
+
+% Page layout
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    margin=1in,
+    top=1.2in,
+    bottom=1.2in
+}
+
+% Fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+
+% Chapter titles
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+% Links and colors
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\usepackage{graphicx}
+\usepackage{parskip} % Better paragraph spacing
