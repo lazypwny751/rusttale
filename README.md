@@ -25,24 +25,24 @@ There is currently limited localization support. It does not restrict language e
 ### Build from Source
 
 1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/lazypwny751/rusttale.git && cd rusttale
-   ```
+```sh
+git clone https://github.com/lazypwny751/rusttale.git && cd rusttale
+```
 
 2. **Fetch resources:**
-   ```sh
-   cargo run -p resources
-   ```
+```sh
+cargo run -p resources
+```
 
 3. **Build for release:**
-   ```sh
-   cargo build --release
-   ```
+```sh
+cargo build --release
+```
 
 4. **Run:**
-   ```sh
-   ./target/release/rusttale
-   ```
+```sh
+./target/release/rusttale
+```
 
 ### Prebuild Installation (Coming Soon)
 
