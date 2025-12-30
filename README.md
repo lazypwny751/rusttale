@@ -1,6 +1,6 @@
 # Rusttale
 
-![image](https://us1.discourse-cdn.com/flex019/uploads/rust_lang/original/2X/9/9f76ef5e791e27deaaafbca2a3bea35d63e165c8.gif)
+<img width="1536" height="1024" alt="rusttale, undertale, deltarune, rougelike, rpg" src="https://github.com/user-attachments/assets/84d46b18-109c-462d-aabc-1893f10d1bfa" />
 
 [![](https://dcbadge.limes.pink/api/server/QRjRkt65Ht)](https://discord.gg/QRjRkt65Ht)
 
