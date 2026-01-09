@@ -1,4 +1,4 @@
-LANGS := en fr tr
+LANGS := en tr
 LATEX := pdflatex
 FLAGS := -interaction=nonstopmode
 
