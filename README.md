@@ -4,7 +4,10 @@
 
 [![](https://dcbadge.limes.pink/api/server/QRjRkt65Ht)](https://discord.gg/QRjRkt65Ht)
 
-**Rusttale** is a 2D game developed using the [Tetra](https://github.com/tetra-engine/tetra) framework in Rust.
+**Rusttale** is a 2D game developing using the [Tetra](https://github.com/tetra-engine/tetra) framework in Rust.
+
+- add fluent for i18n.
+- add ogmo3 for level design.
 
 # [The Lore](docs/the_lore)
 We're generating an universe for this concept, please help us🙏.
