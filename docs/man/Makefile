@@ -1,6 +1,6 @@
 PREFIX ?= /usr/local
 MANPREFIX ?= $(PREFIX)/share/man
-LANGS ?= en fr tr
+LANGS ?= en tr
 
 all: install
 

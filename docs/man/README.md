@@ -5,7 +5,6 @@ This directory contains the manual pages for `rusttale`.
 ## Structure
 
 - `en/`: English manual pages (Default)
-- `fr/`: French manual pages
 - `tr/`: Turkish manual pages
 
 ## Installation
