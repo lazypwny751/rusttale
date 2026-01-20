@@ -1,11 +1,12 @@
-# MIVS - ?
+# MIVS - Multi-dimensional Intent Vector System
 
 # That sounds pretty good but what is mivs?
 
-**M**ulti-dimensional
-**I**ntent
-**V**ector
-**S**ystem
+> [!NOTE]
+> **M**ulti-dimensional <br>
+> **I**ntent <br>
+> **V**ector <br>
+> **S**ystem
 
 So basically MIVS aims to create more realistic, reliable, and multi-dimensional dialogues.
 Instead of forcing the player into fixed choices, the user can freely write their own text.
@@ -18,8 +19,8 @@ that slowly shift based on what the player says, rather than hard-switching betw
 
 # Sample for the concept
 
-npc  > Hello, how are you?
-user < i'm **fine**, **thanks** and you?
-...it's a "positive", "greeting" message.
-...the dialog helper choises best return for this situation.
-npc  > good, thanks!
+**npc**  > Hello, how are you? <br>
+**user** < i'm **fine**, **thanks** and you? <br>
+...it's a "positive", "greeting" message. <br>
+...the dialog helper chooses best return for this situation. <br>
+**npc**  > good, thanks!
