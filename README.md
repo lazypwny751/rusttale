@@ -1,6 +1,6 @@
-# Rusttale - rewrite in rust 😉
+# Rusttale
 
-<img width="640" height="640" alt="rusty640_2" src="https://github.com/user-attachments/assets/0716b90b-bb84-487b-a72d-d05cd7a76527" />
+<img width="640" height="640" alt="rusty_1" src="https://github.com/user-attachments/assets/4f3105b9-27a7-4ba1-8148-8e005d18255d" />
 
 [![](https://dcbadge.limes.pink/api/server/QRjRkt65Ht)](https://discord.gg/QRjRkt65Ht)
 
